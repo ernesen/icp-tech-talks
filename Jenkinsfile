@@ -12,17 +12,17 @@ node {
          * docker build on the command line */
 	/* app = docker.build("ernesen/icp-tech-talks") */
         app = docker.build("${env.IMAGE_BUILD}")
-	sh 'echo "Build image"'
+	/*sh 'echo "Build image"' */
     }
 
     stage('Test image') {
         /* Ideally, we would run a test framework against our image.
          * For this example, we're using a Volkswagen-type approach ;-) */
-		/*
-        app.inside {
+	
+	app.inside {
             sh 'echo "Tests passed"'
-        } */
-	sh 'echo "Test image"'
+        }
+	sh 'echo "Tests passed"'
     }
 
     stage('Push image') {
