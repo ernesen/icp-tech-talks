@@ -1,0 +1,15 @@
+links.txt
+build.sh
+*.zip
+*.tar
+*.rar
+index.html
+index2.html
+Reading-Kubernetes
+07-lesson
+08-lesson
+
+# new releases
+node_modules/
+backup/
+
