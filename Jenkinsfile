@@ -10,9 +10,9 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-		/* app = docker.build("ernesen/icp-tech-talks") */
+	/* app = docker.build("ernesen/icp-tech-talks") */
         /* app = docker.build("${env.IMAGE_BUILD}") */
-		sh 'echo "Tests passed"'
+		sh 'echo "Build image"'
     }
 
     stage('Test image') {
@@ -34,7 +34,7 @@ node {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         } */
-		sh 'echo "Test image"'
+	sh 'echo "Push image"'
     }
 }
 
