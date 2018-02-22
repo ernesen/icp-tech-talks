@@ -12,7 +12,7 @@ node {
          * docker build on the command line */
 	/* app = docker.build("ernesen/icp-tech-talks") */
         /* app = docker.build("${env.IMAGE_BUILD}") */
-		sh 'echo "Build image"'
+	sh 'echo "Build image"'
     }
 
     stage('Test image') {
@@ -22,7 +22,7 @@ node {
         app.inside {
             sh 'echo "Tests passed"'
         } */
-		sh 'echo "Test image"'
+	sh 'echo "Test image"'
     }
 
     stage('Push image') {
