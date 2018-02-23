@@ -10,6 +10,9 @@ var mongo_port = (process.env.MONGO_SERVICE_PORT || 27017 );
 //var localstring = 'mongodb://'+mongo_host+':'+mongo_port+'/quotes';
 var localstring = 'mongodb://'+mongo_host+':'+mongo_port+'/beneficios';
 
+
+// Hello Richard
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
