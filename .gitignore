@@ -3,12 +3,12 @@ build.sh
 *.zip
 *.tar
 *.rar
+*.sh
 index.html
 index2.html
 Reading-Kubernetes
-07-lesson
-08-lesson
-
+*.txt
+*.yaml
 # new releases
 node_modules/
 backup/
